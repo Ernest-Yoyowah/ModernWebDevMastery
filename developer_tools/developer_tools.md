@@ -67,7 +67,7 @@ Browser Developer Tools are a set of utilities provided by web browsers to assis
 
 ## Example:
 
-![Developer Tools Example](developer_tools_example.png)
+![Developer Tools Example](developer_tools.png)
 
 In this example, the "Elements" panel displays the HTML structure, the "Console" panel logs a message, and the "Network" panel shows network requests.
 
