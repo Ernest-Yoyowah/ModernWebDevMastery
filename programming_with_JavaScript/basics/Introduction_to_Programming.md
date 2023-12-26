@@ -30,5 +30,3 @@ Learning programming provides the ability to automate tasks, solve problems, and
 To get started with programming, one typically chooses a programming language. In this course, we will focus on JavaScript, as part of my preperation towards my mobile development journey with react native.
 
 ---
-
-Feel free to customize the content based on your preferences and the specific focus of your course.
