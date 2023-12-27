@@ -1,4 +1,4 @@
-# Conditionals and Loops in JavaScript
+# Conditional Statements and Loops in JavaScript
 
 ## Overview:
 
