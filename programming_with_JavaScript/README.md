@@ -15,7 +15,7 @@ In the process of learning React Native, a solid understanding of JavaScript is 
 
 ### Practicals
 
-- [JavaScript Practical](https://github.com/Ernest-Yoyowah/Coding-Interview-Prep/tree/main/JavaScript)
+- [JavaScript Practicals](https://github.com/Ernest-Yoyowah/Coding-Interview-Prep/tree/main/JavaScript)
   - Find hands-on coding exercises and practical examples here.
 
 ## Recommended Resources
