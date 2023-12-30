@@ -36,7 +36,7 @@ Scope in JavaScript refers to the context in which variables are declared and ac
 3. **Block Scope (Introduced in ES6):**
 
    - Variables declared with `let` and `const` keywords have block scope.
-   - Limited to the block ({}) in which they are defined.
+   - Limited to the block {this is a Block Scope} in which they are defined.
    - Block scope helps prevent issues like variable hoisting and unintended reassignments.
 
    ```javascript
