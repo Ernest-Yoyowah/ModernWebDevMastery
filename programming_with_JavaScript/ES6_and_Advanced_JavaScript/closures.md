@@ -57,6 +57,42 @@ Scope in JavaScript refers to the context in which variables are declared and ac
    }
    ```
 
+   5. **Function Scope:**
+
+   - Variables declared inside a function (using `var`) have function scope.
+   - Accessible within the entire function, even before the variable declaration (due to hoisting).
+   - Be cautious with `var` as it doesn't have block scope.
+
+   ```javascript
+   function exampleFunction() {
+     if (true) {
+       var functionScopedVariable = "I am function-scoped";
+     }
+     console.log(functionScopedVariable); // Accessible throughout the function
+   }
+   ```
+
+5. **Lexical Scope:**
+
+   - Lexical scope, also known as static scope, is determined at the time of code writing.
+   - It is based on the physical placement of functions and blocks within the code.
+   - Inner functions have access to variables declared in their outer functions.
+
+   ```javascript
+   function outerFunction() {
+     let outerVariable = "I am from the outer function";
+
+     function innerFunction() {
+       console.log(outerVariable);
+     }
+
+     return innerFunction;
+   }
+
+   const closureFunction = outerFunction();
+   closureFunction(); // Outputs: I am from the outer function
+   ```
+
 ## Closures
 
 ### Definition:
