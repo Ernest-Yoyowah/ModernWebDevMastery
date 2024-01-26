@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { Fragment } from "react";
 
 const NewsPage = () => {
@@ -6,10 +7,10 @@ const NewsPage = () => {
       <h1>The News Page</h1>
       <ul>
         <li>
-          <a href="/news/latest">Why NextJS is a Great Framework</a>
+          <Link href="/news/latest">Why NextJS is a Great Framework</Link>
         </li>
         <li>
-          <a href="/news/typescript">About TypeScipt Essetials</a>
+          <Link href="/news/typescript">About TypeScipt Essetials</Link>
         </li>
       </ul>
     </Fragment>
