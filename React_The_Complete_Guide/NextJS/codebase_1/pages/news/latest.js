@@ -1,7 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 const latest = () => {
-  return <h1>The latest News</h1>;
+  return (
+    <Fragment>
+      <h1>NextJS</h1>
+      <p>A powerful ReactJS Framework</p>
+    </Fragment>
+  );
 };
 
 export default latest;
