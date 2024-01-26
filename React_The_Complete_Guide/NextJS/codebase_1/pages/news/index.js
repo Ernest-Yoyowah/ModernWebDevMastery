@@ -8,7 +8,9 @@ const NewsPage = () => {
         <li>
           <a href="/news/latest">Why NextJS is a Great Framework</a>
         </li>
-        <li>Core TypeScipt Essetials</li>
+        <li>
+          <a href="/news/typescript">About TypeScipt Essetials</a>
+        </li>
       </ul>
     </Fragment>
   );
