@@ -1,7 +1,7 @@
 import React from "react";
 
 const latest = () => {
-  return <div>The latest News</div>;
+  return <h1>The latest News</h1>;
 };
 
 export default latest;
