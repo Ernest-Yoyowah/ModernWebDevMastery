@@ -2,6 +2,14 @@
 
 ## Introduction to `useState`
 
+Before diving into `useState`, let's clarify what we mean by "state" in the context of React.
+
+## What is State?
+
+In React, **state** is a JavaScript object that represents the current condition or data of a component. It is dynamic and can change over time, allowing components to manage and store information that might be subject to updates or modifications.
+
+Now, let's explore `useState`.
+
 `useState` is a React Hook designed to enable functional components to manage state. It was introduced to address the limitations of state management in functional components, which traditionally lacked the ability to hold and update state.
 
 ## Purpose and Creation
