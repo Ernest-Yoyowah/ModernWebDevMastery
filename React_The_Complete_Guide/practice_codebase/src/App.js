@@ -1,12 +1,17 @@
 import React from "react";
 import "./index.css";
-import Form from "./components/form";
+import MovieList from "./components/MovieList";
+import Nav from "./components/Nav";
+import { MovieProvider } from "./components/movieContext";
 
 const App = () => {
   return (
-    <>
-      <Form />
-    </>
+    <MovieProvider>
+      <>
+        <Nav />
+        <MovieList />
+      </>
+    </MovieProvider>
   );
 };
 
