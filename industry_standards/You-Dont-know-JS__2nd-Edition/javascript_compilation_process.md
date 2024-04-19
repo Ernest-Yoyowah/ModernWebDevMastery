@@ -38,4 +38,4 @@ Once the bundled JavaScript code is delivered to a JS engine, the following step
 
 ## Processing by JS Engine
 
-![JS Engine](/JIT-Compilation.png)
+![JS Engine](JIT-Compilation.png)
