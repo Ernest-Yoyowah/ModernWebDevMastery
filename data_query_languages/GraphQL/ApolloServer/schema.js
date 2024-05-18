@@ -1,14 +1,16 @@
 export const typeDefs = `#graphql
 type Keyboard {
     id: ID!
-    brand: string!
-    model: [string!]!
+    brand: String!
+    model: String!
 }
 
 type Review {
     id: ID!
     rating: Int!
     content: String!
+    author: Author!
+    keyboard: Keyboard!
 }
 
 type Author {
@@ -18,10 +20,19 @@ type Author {
 }
 
 type Query {
-    reviews: [Reviews]
-    keyboards: [Game]
-    authors: [Author]
+    keyboards: [Keyboard!]!
+    reviews: [Review!]!
+    authors: [Author!]!
+    keyboard(id: ID!): Keyboard
+    review(id: ID!): Review
+    author(id: ID!): Author
+}
+
+type Mutation {
+    addKeyboard(brand: String!, model: String!): Keyboard!
+    addReview(rating: Int!, content: String!, authorId: ID!, keyboardId: ID!): Review!
+    addAuthor(name: String!, verified: Boolean!): Author!
 }
 `;
 
-// Types: int, float, string, boolean, ID
+// Types: Int, Float, String, Boolean, ID
