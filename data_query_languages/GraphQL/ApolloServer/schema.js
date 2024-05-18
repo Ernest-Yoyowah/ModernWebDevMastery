@@ -9,11 +9,11 @@ type Review {
     id: ID!
     rating: Int!
     content: String!
-    author: Author!
+    keyboardist: Keyboardist!
     keyboard: Keyboard!
 }
 
-type Author {
+type Keyboardist {
     id: ID!
     name: String!
     verified: Boolean!
@@ -22,16 +22,16 @@ type Author {
 type Query {
     keyboards: [Keyboard!]!
     reviews: [Review!]!
-    authors: [Author!]!
+    keyboardists: [Keyboardist!]!
     keyboard(id: ID!): Keyboard
     review(id: ID!): Review
-    author(id: ID!): Author
+    keyboardist(id: ID!): Keyboardist
 }
 
 type Mutation {
     addKeyboard(brand: String!, model: String!): Keyboard!
-    addReview(rating: Int!, content: String!, authorId: ID!, keyboardId: ID!): Review!
-    addAuthor(name: String!, verified: Boolean!): Author!
+    addReview(rating: Int!, content: String!, keyboardistId: ID!, keyboardId: ID!): Review!
+    addKeyboardist(name: String!, verified: Boolean!): Keyboardist!
 }
 `;
 
