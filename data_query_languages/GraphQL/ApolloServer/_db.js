@@ -4,6 +4,7 @@ let keyboards = [
   { id: "3", brand: "Roland", model: "FP-30X" },
   { id: "4", brand: "Korg", model: "B2" },
   { id: "5", brand: "Alesis", model: "Recital Pro" },
+  { id: "5", brand: "Nord", model: "Stage 5" },
 ];
 
 let keyboardists = [
