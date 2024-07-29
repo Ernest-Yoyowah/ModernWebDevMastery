@@ -38,8 +38,6 @@ Consider the iOS or Android operating systems:
 
 ## Recent Incident: The Falcon Update
 
-On July 19, 2024, a PATCH update for CrowdStrike’s Falcon software, licensed by Microsoft, caused significant issues leading to a Microsoft outage. This incident highlights the critical importance of rigorous testing and adherence to semantic versioning principles to prevent disruptions and maintain stability.
-
 ## Conclusion
 
 Semantic Versioning is a vital tool in the software development process. By following its principles, developers can manage software updates more effectively, ensure compatibility, and reduce the likelihood of unexpected issues.
