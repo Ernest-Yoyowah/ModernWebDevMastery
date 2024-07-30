@@ -1,6 +1,6 @@
 // some useful links
 
-export const usefulLinks: any = {
+export const usefulLinks: {} = {
   curlCommand: "curl -I -X GET http://harvard.edu/",
   curlCommandSecure: "curl -I -X GET https://www.harvard.edu/",
   tcpipGuide: "https://www.tcpipguide.com/",
