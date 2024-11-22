@@ -15,7 +15,7 @@ Speaking of stories, tonight was supposed to be an all-night rehearsal at Adenta
 6. where would you travel if cost was not a barrier
 7. what happened at the depertmment meeting last week.
 
-guides
+Guides
 
 1. practice coming up with headlines
 2.
