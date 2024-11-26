@@ -14,6 +14,7 @@ Speaking of stories, tonight was supposed to be an all-night rehearsal at Adenta
 5. give us a progress report on your latest project
 6. where would you travel if cost was not a barrier
 7. what happened at the depertmment meeting last week.
+8. my experience at dexwin working with MTN Ghana.
 
 Guides
 
