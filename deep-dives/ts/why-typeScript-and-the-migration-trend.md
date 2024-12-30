@@ -2,7 +2,7 @@
 
 ## Overview
 
-TypeScript (TS) extends JavaScript by adding static typing, offering a safer and more maintainable approach to development. Its integration into modern web stacks has become a major trend.
+TypeScript (TS) extends JavaScript by adding static typing, offering a safer and more maintainable approach to development. Its integration into modern web stacks has become a major trend web and software engineering in general.
 
 ## Key Reasons to Use TS
 
