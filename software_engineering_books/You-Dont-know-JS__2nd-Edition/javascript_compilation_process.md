@@ -58,3 +58,9 @@ Once the bundled JavaScript code is delivered to a JS engine, the following step
 - **Execution:** The final step where the JavaScript program is run, yielding the output.
 
 This comprehensive process ensures that JavaScript code, from the developer’s editor to execution, is both efficient and optimized for performance.
+
+TO Do
+
+- turbofan
+- ignition
+- optimization techniques
