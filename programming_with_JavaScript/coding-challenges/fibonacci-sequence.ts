@@ -19,8 +19,8 @@ const generateFibonacciSequence = (sequenceLength: number): number[] => {
     fib[i] = fib[i - 1] + fib[i - 2];
   }
 
-  // return fib; // reverse
-  return fib.reverse();
+  // return fib;
+  return fib.reverse(); // reverse
 };
 
 // Example usage
