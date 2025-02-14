@@ -1,3 +1,67 @@
+# Understanding React Rendering
+
+## **1. Transpilation (JSX → JavaScript)**
+
+Before React even starts rendering, JSX must be **transpiled** by **Babel** because browsers do not understand JSX. JSX is an **extension of JavaScript** that allows us to write markup within JavaScript. It is often called **syntactic sugar** for `React.createElement()`.
+
+Once this conversion happens, React takes over the rendering process.
+
+---
+
+## **2. What Triggers React Rendering?**
+
+React re-renders a component when:  
+✅ The **component mounts (first render)**.  
+✅ The **state changes** (e.g., `useState`, `useReducer`).  
+✅ The **props change**.  
+✅ The **context changes** (if using `useContext`).  
+✅ A **parent component re-renders**, causing a child component to update.
+
+---
+
+## **3. React Rendering Process**
+
+Once React detects that a component needs to render, it follows these steps:
+
+### **Step 1: React Element Processing**
+
+- React calls the **React element**. This element has three important properties:
+  - `type` → Determines whether it's an HTML tag (`div`, `p`) or a component (`MyComponent`).
+  - `props` → Contains attributes and children elements.
+  - `children` → Nested elements inside the component.
+
+### **Step 2: Checking the Type Property**
+
+- If `type` is a **string**, React directly creates a **DOM node**.
+- If `type` is a **function**, React recognizes it as a **component**, calls the function, and extracts its elements **recursively**.
+
+### **Step 3: Virtual DOM Creation**
+
+React uses the extracted elements to create a **new Virtual DOM (vDOM)** while keeping a **copy of the old vDOM**.
+
+### **Step 4: Diffing Algorithm**
+
+React **compares** the new vDOM with the old vDOM and finds the differences. This process is called **diffing**.
+
+### **Step 5: Reconciliation (Updating the Real DOM)**
+
+React applies the **calculated changes** from the diffing step to the **real DOM**. This process is called **reconciliation**.
+
+---
+
+## **4. Summary of the React Rendering Flow**
+
+1. **Transpilation**: JSX is converted into JavaScript that the browser understands.
+2. **React calls the component function** if it's a function component.
+3. **Extracts all DOM node elements** recursively.
+4. **Creates a new Virtual DOM**.
+5. **Compares it with the previous Virtual DOM (diffing algorithm)**.
+6. **Updates only the changed parts** in the real DOM (reconciliation).
+
+**This process ensures React updates the UI efficiently while minimizing direct manipulation of the real DOM.**
+
+NOTE:
+
 describing how React processes components before rendering them on the screen
 
 Batching
