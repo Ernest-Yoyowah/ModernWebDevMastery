@@ -35,6 +35,13 @@ Once React detects that a component needs to render, it follows these steps:
 - If `type` is a **string**, React directly creates a **DOM node**.
 - If `type` is a **function**, React recognizes it as a **component**, calls the function, and extracts its elements **recursively**.
 
+#### **Why is Recursion Used?**
+
+React **uses recursion** to handle deeply nested components efficiently.
+
+- If a loop were used, it would require an additional nested loop to process child components, leading to **poor time complexity**.
+- Recursion **naturally** traverses and processes all elements in a **tree-like structure**, making it ideal for rendering the Virtual DOM.
+
 ### **Step 3: Virtual DOM Creation**
 
 React uses the extracted elements to create a **new Virtual DOM (vDOM)** while keeping a **copy of the old vDOM**.
@@ -49,7 +56,47 @@ React applies the **calculated changes** from the diffing step to the **real DOM
 
 ---
 
-## **4. Summary of the React Rendering Flow**
+## **4. Additional React Performance Concepts**
+
+### **Batching**
+
+React **batches multiple state updates** into a single render cycle to **reduce re-renders** and improve performance.
+
+- Previously, batching occurred **only in event handlers**.
+- **React 18 introduced automatic batching**, meaning updates from async operations (e.g., promises, setTimeout) are also batched.
+
+### **Fiber Architecture**
+
+React **Fiber** is a reimplementation of React's **reconciliation algorithm** that improves rendering performance.
+
+- **Prior to Fiber**, rendering was synchronous and could cause UI blocking.
+- **With Fiber**, React can split rendering into chunks, pausing and resuming work when needed.
+
+### **Concurrent Rendering**
+
+Concurrent rendering is an optimization introduced in **React 18** that allows React to **work on multiple tasks simultaneously**.
+
+- It prevents the UI from being blocked by heavy computations.
+- React **prioritizes rendering work** so that user interactions remain responsive.
+
+### **Memoization**
+
+Memoization is an **optimization technique** used to **avoid unnecessary re-renders**.
+
+- **React.memo** is used for **memoizing functional components**.
+- **useMemo** is used to **memoize values** to prevent expensive recalculations.
+- **useCallback** is used to **memoize functions**, preventing them from being recreated on every render.
+
+### **Selective Rendering**
+
+Selective rendering means React **only updates parts of the UI that actually change**.
+
+- **Keys** help React identify which list items **changed, were added, or were removed**.
+- **Pure components and React.memo** ensure components **only re-render when needed**.
+
+---
+
+## **5. Summary of the React Rendering Flow**
 
 1. **Transpilation**: JSX is converted into JavaScript that the browser understands.
 2. **React calls the component function** if it's a function component.
@@ -58,11 +105,7 @@ React applies the **calculated changes** from the diffing step to the **real DOM
 5. **Compares it with the previous Virtual DOM (diffing algorithm)**.
 6. **Updates only the changed parts** in the real DOM (reconciliation).
 
-**This process ensures React updates the UI efficiently while minimizing direct manipulation of the real DOM.**
-
-NOTE:
-
-describing how React processes components before rendering them on the screen
+**With optimizations like batching, Fiber, concurrent rendering, memoization, and selective rendering, React ensures high performance and efficiency.** 🎯
 
 Batching
 Fiber Architecture
