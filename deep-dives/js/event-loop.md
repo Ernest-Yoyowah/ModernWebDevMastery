@@ -10,8 +10,8 @@
 - **JavaScript Runtime**:
   - The JavaScript runtime environment is a broader system that includes:
     1. The **JavaScript Engine**
-    2. **Web APIs** or **Node.js APIs** (e.g., `setTimeout`, DOM manipulation, `fetch`).
-    3. The **Event Loop** and **Queues** (Callback Queue, Microtask Queue, etc.).
+    2. The **Event Loop** and **Queues** (Callback Queue, Microtask Queue, etc.).
+    3. **Web APIs** or **Node.js APIs** (e.g., `setTimeout`, DOM manipulation, `fetch`).
   - In simple terms, the **engine** is **part of the runtime**, but the runtime includes additional components that enable JavaScript to interact with the browser or Node.js environment.
 
 ### Summary:
