@@ -39,5 +39,5 @@ React is a popular JavaScript library for building user interfaces. Its declarat
 
 TODO:
 
-1. diffing algorithm and reconciliation
+1. diffing algorithm and reconciliation - diffing calculates the difference between the previos and current state changes and uses it to reconcile and real DOM
 2. where does diffing happen (is that it happens between the virtual and real DOM or it happens in only the virtual dom (prev changes and current chnages))
