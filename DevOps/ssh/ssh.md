@@ -122,18 +122,6 @@ ssh myserver
 
 ---
 
-## Where SSH Fits in Software Engineering
-
-SSH falls under **DevOps & Cloud Engineering**, as it is essential for:
-
-- Server management
-- Secure remote access
-- Deployments and automation
-- Cloud computing (AWS, DigitalOcean, Azure)
-- Security & access control
-
----
-
 ## Next Steps
 
 1. Learn basic **Linux commands**: `ls`, `cd`, `cp`, `mv`, `rm`, `chmod`, `chown`
