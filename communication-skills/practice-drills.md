@@ -4,7 +4,7 @@
 
 "My weekends are usually pretty low-key—just me jamming on the keyboard, bingeing Nollywood movies, and having those deep reflections where I question all my life choices. So yeah, chill but kind of boring. But tomorrow, I’m changing it up—keeping track of my day so I can finally have an interesting weekend story to tell!
 
-Speaking of stories, tonight was supposed to be an all-night rehearsal at Adenta. But guess what? It got postponed because of a chief’s funeral rites. Apparently, no one’s allowed out after 8 PM. Now imagine if I didn’t know and showed up. Chale, I’d probably get escorted home by tradition itself! Ahaha!"
+Speaking of stories, tonight was supposed to be an all-night rehearsal at Adenta. But guess what? It got postponed because of a chief’s funeral rites. Apparently, no one’s allowed out after 8 PM. Now imagine if I didn’t know and showed up. Chale, I’d probably get escorted home by tradition itself! Ahaha!!"
 
 ```
 

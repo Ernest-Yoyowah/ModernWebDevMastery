@@ -1,0 +1,2 @@
+open banking
+FInTech domains
