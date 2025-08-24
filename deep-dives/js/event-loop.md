@@ -8,6 +8,7 @@
   - It processes the code, optimizes it, and converts it into machine-readable instructions for execution.
 
 - **JavaScript Runtime**:
+  - The javascript runtime is an ennvironment which contains all the necessary components in order to use and execute javascript programs.
   - The JavaScript runtime environment is a broader system that includes:
     1. The **JavaScript Engine**
     2. The **Event Loop** and **Queues** (Callback Queue, Microtask Queue, etc.).
@@ -21,7 +22,7 @@
 
 ---
 
-## Task Queue, Microtask Queue, and Callback Queue
+## Microtask Queue and Callback Queue(Task Queue)
 
 JavaScript handles asynchronous operations using the **Event Loop** and different types of queues:
 
@@ -106,3 +107,14 @@ Task Queue
    - Task Queue
 
 ---
+
+```
+JavaScript Runtime
+├── JavaScript Engine
+│   ├── Call Stack
+│   └── Heap
+├── Web APIs (DOM, setTimeout, fetch, etc.)
+├── Callback Queue (Task Queue)
+├── Microtask Queue (Promises, MutationObserver)
+└── Event Loop (moves tasks to the call stack)
+```
