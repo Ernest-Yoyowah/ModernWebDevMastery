@@ -26,6 +26,8 @@ Once the bundled JavaScript code is delivered to a JS engine, the following step
 - **Syntax Analysis (AST Generation):** The tokens are used to create an **Abstract Syntax Tree (AST)**, which represents the syntactic structure of the code. This step also checks for **syntax errors** in the program.
 - **Output:** AST representation of the code.
 
+https://astexplorer.net
+
 ### 4. Bytecode Generation by Ignition (Intermediate Representation)
 
 - **Description:** The AST is processed by the **Ignition interpreter**, which converts it into **bytecode**, a compact, intermediate representation of the code. This bytecode is designed to be executed efficiently by the engine.
@@ -61,3 +63,7 @@ Once the bundled JavaScript code is delivered to a JS engine, the following step
 ## Summary
 
 The V8 engine combines interpretation and compilation to balance startup speed and execution performance. The pipeline starts with parsing and bytecode generation by Ignition, followed by interpretation, and transitions to optimized machine code execution through TurboFan for hot code paths. This dynamic approach ensures efficient JavaScript execution in modern applications.
+
+### links
+
+- https://astexplorer.net
